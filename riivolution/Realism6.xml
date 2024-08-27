@@ -1,0 +1,27 @@
+<wiidisc version="1" shiftfiles="true" root="/Realism6" log="true">
+	<id game="SMN">
+		<region type="P"/>
+		<region type="E"/>
+		<region type="J"/>
+		<region type="K"/>
+		<region type="W"/>
+		<region type="C"/>
+	</id>
+	<options>
+		<section name="Realism 6: Origins">
+			<option name="Available" id="realism6">
+				<choice name="Yes"><patch id="realism6"/></choice>
+			</option>
+		</section>
+	</options>
+	<patch id="realism6">
+		<folder external="BGs" disc="/Object" create="true" />
+		
+		<!-- Save name change -->
+		<!-- EU -->    <memory offset="0x802F148C" value="7769696D6A3364" original="7769696D6A3264" />
+		<!-- US -->    <memory offset="0x802F118C" value="7769696D6A3364" original="7769696D6A3264" />
+		<!-- JP -->    <memory offset="0x802F0FAC" value="7769696D6A3364" original="7769696D6A3264" />
+		<!-- KR/TW --> <memory offset="0x802F17CC" value="7769696D6A3364" original="7769696D6A3264" />
+		<!-- CN -->    <memory offset="0x802F5C2C" value="7769696D6A3364" original="7769696D6A3264" />
+	</patch>
+</wiidisc>
